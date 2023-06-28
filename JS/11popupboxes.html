@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="a()">Xyz</button>
+    <script>
+        function a()
+        {
+            alert("Enter details.")
+        }
+    </script> -->
+
+    <!-- <p id="one"></p>
+    <button onclick="a()">xyz</button>
+    <script>
+        var txt
+        function a(){
+            if(confirm("Right")){
+                txt = "OK"
+            }
+            else{
+                txt = "NO"
+            }
+            document.getElementById("one").innerHTML=txt
+        }
+    </script> -->
+
+    <p id="one"></p>
+    <button onclick="a()">xyz</button>
+    <script>
+        var txt
+        function a() {
+            var per=prompt("abcdefghijklmnopqrstuvwxyz")
+            if(per == "" || per == null){
+                txt="please enter your name"
+            }
+            else{
+                txt="Hiiii  "+ per
+            }
+            document.getElementById("one").innerHTML=txt
+        }
+    </script>
+</body>
+</html>

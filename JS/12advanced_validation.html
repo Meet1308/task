@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post"onsubmit="return ValiData(input,msg)" >
+        <table border="1" align="center">
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <input type="text" name="name" id="name" onblur="ValidData(this,'nameerror')" onkeydown="NameValid(this,'nerror')">
+                    <span id="nameerror"></span>
+                    <span id="nerror"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="email" name="email" id="email" onblur="ValidData(this,'emailerror')" onkeydown="EmailValid(this,'eerror')">
+                    <span id="emailerror"></span>
+                    <span id="eerror"></span>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function ValidData(input, msg){
+            if (input.value == " ") {
+                document.getElementById(msg).style.color="red";
+                document.getElementById(msg).innerHTML="Please enter Data !";
+                return false;
+            } else {
+                document.getElementById(msg).innerText="";
+                return true;
+            }
+        }
+
+        function NameValid(input,msg) {
+            var name=/^[a-zA-Z]+$/
+            if (name.test(input.value)) {
+                document.getElementById(msg).innerText="";
+                return true;
+            } else {
+                document.getElementById(msg).style.color="red";
+                document.getElementById(msg).innerText="Please Enter Only Characters !";
+                return false;
+            }
+        }
+
+        function EmailValid(input,msg) {
+            var email=/^[a-z0-9._]+@+[a-z].([a-z]{3})+$/
+            if (email.test(input.value)) {
+                
+            } else {
+                
+            }
+        }
+    </script>
+</body>
+</html>

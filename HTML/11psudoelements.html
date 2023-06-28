@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div::first-letter{
+            font-size: 20px;
+            color: red;
+        }
+        div::first-line{
+            color: aqua;
+        }
+        div::after{
+            content: "ABCDEF";
+        }
+        div::before{
+            /* content: "ABCDE"; */
+            /* content: url(mickey.png); */
+        }
+        div::selection{
+            background-color: aqua;
+            color: black;
+        }
+        li::marker{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, eaque earum. Iure ut quibusdam aperiam voluptatibus sapiente, cumque esse, est mollitia recusandae atque magni numquam earum consequatur possimus harum fuga!</div>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .head{
+            height: 100px;
+            background-color: aqua;
+        }
+
+        @media (min-width:769px) and (max-width:1024px) {
+            .main{
+                display: flex;
+            }
+            .one1{
+                background-color: blue;
+                width: 25%;
+            }
+            .one2{
+                background-color: brown;
+                width: 75%;
+            }
+            .one3{
+                background-color: chartreuse;
+                width: 25%;
+            }
+        }
+
+        @media (min-width:481px) and (max-width:768px) {
+            .main{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .one1{
+                background-color: blueviolet;
+                width: 50%;
+            }
+            .one2{
+                background-color: cornflowerblue;
+                width: 50%;
+            }
+            .one3{
+                background-color: darkgreen;
+                width: 100%;
+            }
+        }
+
+        @media (min-width:320px) and (max-width:480px) {
+            .one1{
+                background-color: darkred;
+                width: 100%;
+                text-align: center;
+            }
+            .one2{
+                background-color: darkorange;
+                width: 100%;
+            }
+            .one3{
+                background-color: hotpink;
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:319px) {
+            .main{
+                background-color: yellow;
+            }            
+        }
+    </style>
+</head>
+<body>
+    <div class="head"></div>
+    <div class="main">
+    <div class="one1">
+        <ul>
+            <li>abc</li>
+            <li>def</li>
+            <li>ghi</li>
+        </ul>
+    </div>
+    <div class="one2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam facilis incidunt cumque minus aperiam perspiciatis ea illo fugit voluptate quos accusantium labore debitis ipsam magnam ducimus, illum impedit sed! Vitae?</div>
+    <div class="one3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ex amet nihil et vero suscipit a id magnam esse pariatur mollitia iure itaque optio doloremque nulla, laboriosam, non aliquid ut?</div>
+</div>
+</body>
+</html>

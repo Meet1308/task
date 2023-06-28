@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* li{
+            display: inline;
+            background-color: aqua;
+            display: block;
+            display: inline-block;
+        }   */
+        body *{
+            border: 2px solid black;
+            display: inline-block;
+            padding: 30px;
+        }
+        li{
+            visibility: hidden;
+            opacity: 0;
+            transition: 1s;
+        }
+        ul:hover li{
+            visibility: visible;
+            opacity: 1;
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <!-- <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul> -->
+    <div>Grand Father
+        <ul>Father
+            <li>Child
+                <span>Span</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

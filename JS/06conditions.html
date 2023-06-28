@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- if 
+        if else
+        else if
+        switch
+    -->
+    <p id="one"></p>
+    <script>
+        // var a = 10
+        // var b = 10
+        // if(a>b){
+        //     console.log("a is greater.")
+        // }
+        // else if(a<b){
+        //     console.log("b is grater.")
+        // }
+        // else{
+        //     console.log("Both are same.");
+        // }
+
+        // var day=7
+        // switch (day) {
+        //     case 0:
+        //         console.log("mon");
+        //         break;
+
+        //     case 1:
+        //         console.log("tue");
+        //         break;
+
+        //     case 2:
+        //         console.log("wed");
+        //         break;
+
+        //     case 3:
+        //         console.log("thu");
+        //         break;
+
+        //     case 4:
+        //         console.log("fri");
+        //         break;
+
+        //     case 5:
+        //         console.log("sat");
+        //         break;
+
+        //     case 6:
+        //         console.log("sun");
+        //         break;
+
+        //     default:
+        //         console.log("invalid");
+        //         break;
+        // }
+
+
+        var day
+        switch (new Date().getDay()) {
+            case 1:
+                day = "mon"
+                break;
+
+            case 2:
+                day = "tue"
+                break;
+
+            case 3:
+                day = "wed"
+                break;
+
+            case 4:
+                day = "thu"
+                break;
+
+            case 5:
+                day = "fri"
+                break;
+
+            case 6:
+                day = "sat"
+                break;
+
+            case 7:
+                day = "sun"
+        }
+        document.getElementById("one").innerHTML="Today is "+ day
+    </script>
+</body>
+
+</html>
